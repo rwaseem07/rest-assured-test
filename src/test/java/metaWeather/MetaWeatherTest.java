@@ -20,25 +20,22 @@ public class MetaWeatherTest {
 
         List<LocationResponse> locationResponseList = metaWeather.getLocationWeather(locationId, null);
 
-
-
         for(int i = 0; i< locationResponseList.size(); i++){
             LocationResponse obj = locationResponseList.get(i);
-            softAssert.assertNotNull(obj.getApplicable_date());
-            softAssert.assertNotNull(obj.getAir_pressure());
-            softAssert.assertNotNull(obj.getCreated());
-            softAssert.assertNotNull(obj.getHumidity());
-            softAssert.assertNotNull(obj.getAir_pressure());
-            softAssert.assertNotNull(obj.getId());
-            softAssert.assertNotNull(obj.getMax_temp());
-            softAssert.assertNotNull(obj.getCreated());
-            softAssert.assertNotNull(obj.getMin_temp());
-            softAssert.assertNotNull(obj.getWind_direction());
-            softAssert.assertNotNull(obj.getPredictability());
-            softAssert.assertNotNull(obj.getWind_speed());
-            softAssert.assertNotNull(obj.getWind_direction_compass());
-            softAssert.assertNotNull(obj.getWeather_state_abbr());
-            softAssert.assertNotNull(obj.getWeather_state_name());
+            softAssert.assertNotNull(obj.getAir_pressure(),"get getAir_pressure is missing");
+            softAssert.assertNotNull(obj.getCreated(),"get getCreated is missing");
+            softAssert.assertNotNull(obj.getHumidity(),"get getHumidity is missing");
+            softAssert.assertNotNull(obj.getAir_pressure(),"get getAir_pressure is missing");
+            softAssert.assertNotNull(obj.getId(),"get getId is missing");
+            softAssert.assertNotNull(obj.getMax_temp(),"get getMax_temp is missing");
+            softAssert.assertNotNull(obj.getCreated(),"get getCreated is missing");
+            softAssert.assertNotNull(obj.getMin_temp(),"get getMin_temp is missing");
+            softAssert.assertNotNull(obj.getWind_direction(),"get getWind_direction is missing");
+            softAssert.assertNotNull(obj.getPredictability(),"get getPredictability is missing");
+            softAssert.assertNotNull(obj.getWind_speed(),"get getWind_speed is missing");
+            softAssert.assertNotNull(obj.getWind_direction_compass(),"get getWind_direction_compass is missing");
+            softAssert.assertNotNull(obj.getWeather_state_abbr(),"get getWeather_state_abbr is missing");
+            softAssert.assertNotNull(obj.getWeather_state_name(),"get getWeather_state_name is missing");
         }
         softAssert.assertAll();
     }
