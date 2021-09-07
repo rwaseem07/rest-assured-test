@@ -26,6 +26,7 @@ Testing Scope
 2.The returned response of in specific location weather details can be validated for
 
 Feature
+
 1. This project will help MetaWeather API using Companies to validate the correct response of application using automation to reduce the manual time.
 
 How to use:
